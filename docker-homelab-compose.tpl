@@ -8,7 +8,7 @@ services:
     networks:
       - op-connect
     environment:
-      - TS_AUTHKEY="op://Coto.Studio/Tailscale OAuth/credential"
+      - TS_AUTHKEY="{{ op://Coto.Studio/Tailscale OAuth/credential }}?ephemeral=false"
       - TS_EXTRA_ARGS=--advertise-tags=tag:container
       - TS_STATE_DIR=/var/lib/tailscale
     volumes:
