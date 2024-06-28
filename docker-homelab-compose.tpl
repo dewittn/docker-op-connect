@@ -1,5 +1,4 @@
-version: "3.7"
-
+---
 services:
   ts-op-connect:
     image: tailscale/tailscale:latest
